@@ -7,7 +7,11 @@ def summon_captain_planet(arr)
 end
 
 def long_planeteer_calls(arr)
-  arr.each { |item| item.size > 4 ? return true : nil }
+  arr.each do |item| 
+    if item.size > 4 
+      return true
+    end
+  end
   return false
 end
 
